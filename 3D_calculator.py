@@ -148,9 +148,6 @@ def calculator():
     else:
         print("Error. Run again and please type the name of the object correctly ->")
         calculator()
-    question = input("Would you like to choose other object?: ")
-    if question.lower() != "yes":
-        print("No worries! Thank you for using 3D object volume calculator.")
 
 
 calculator()
