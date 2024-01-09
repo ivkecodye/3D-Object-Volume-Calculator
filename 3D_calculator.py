@@ -1,11 +1,6 @@
 pi = 3.1415926535897931
 
 
-print(
-    "Welcome to the 3D object volume calculator. You can choose any of the given objects from the list: * Cube; * Sphere; * Cuboid; * Cone; * Cylinder; * Prism; * Pyramid."
-)
-
-
 def cube():
     while True:
         try:
@@ -82,7 +77,7 @@ def cylinder():
 def prism():
     while True:
         try:
-            my1 = int(input("Enter the prism base volume value: "))
+            my1 = int(input("Enter the prism base surface value: "))
             my2 = int(input("Enter the prism height value : "))
             V = my1 * my2
 
@@ -123,6 +118,9 @@ def use_again():
 
 
 def calculator():
+    print(
+        "Welcome to the 3D object volume calculator. You can choose any of the given objects from the list: * Cube; * Sphere; * Cuboid; * Cone; * Cylinder; * Prism; * Pyramid."
+    )
     choice = input("Choose your 3D object. Simply type the name of the object: ")
     if choice.lower() == "cube":
         cube()
@@ -147,7 +145,6 @@ def calculator():
         use_again()
     else:
         print("Error. Run again and please type the name of the object correctly ->")
-        calculator()
 
 
 calculator()
